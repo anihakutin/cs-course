@@ -1,3 +1,5 @@
+const {performance} = require('perf_hooks');
+
 function addUpTo(n) {
   return n * (n + 1) / 2;
 }
