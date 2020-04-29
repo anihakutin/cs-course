@@ -1,6 +1,8 @@
 const {performance} = require('perf_hooks');
 
 function addUpTo(n) {
+  // Math operations will always take around the same time
+  // Therefore our big-O performance
   return n * (n + 1) / 2;
 }
 
