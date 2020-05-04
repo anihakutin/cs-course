@@ -1,0 +1,4 @@
+** Aux Space Complexity Rule Of Thumb **
+1. Most primitives are constant space( O(1) ), no matter the size of the input(booleans, numbers, undefined, null)
+2. String requires O(n) space
+3. Reference types are O(n, where n is the length(for arrays) or the number of keys(for objects)
