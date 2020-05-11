@@ -34,3 +34,4 @@ console.log(`Time Elapsed: ${(t2 - t1) / 1000} seconds.`)
 // 3. Accesing elemnts in an array (by index) or object(by key) is constant
 // 4. In a loop, the complexity is the length of the loop
 //    times the complexity of whatever happens inide the loop
+O(3 + n)

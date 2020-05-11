@@ -1,0 +1,42 @@
+charCount("heLLO &&&");
+
+// function charCount(input) {
+//     let cleanString = "";
+//     let results = {};
+    
+//     string = input.toString();
+//     cleanString = string.toLowerCase();
+//     stringArray = cleanString.split("");
+    
+//     stringArray.map((char) => {
+
+//         if (/[a-z0-9]/.test(char)) {
+//             results.hasOwnProperty(char) ? results[char] +=1 : results[char] = 1;
+//         }
+//     })
+//     return results;
+// }
+
+
+function charCount(input) {
+    let cleanInput = input.toString();
+    let string = cleanInput.toLowerCase(); 
+    let results = {};
+
+    for(const char of string) {
+        if (isAlphaNumeric(char)) {
+            results[char] = ++results[char] || 1;
+        }
+    };
+    return results;
+}
+
+function isAlphaNumeric(char) {
+    var code = char.charCodeAt(0);
+    if(!(code > 47 && code < 58) &&
+       !(code > 64 && code < 91) &&
+       !(code > 96 && code < 123)) {
+           return false;
+       }
+       return true;
+}

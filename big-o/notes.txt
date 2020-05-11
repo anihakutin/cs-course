@@ -25,9 +25,58 @@
 
   ** Arrays **
   Access (by index) O(1)
-  Searching O(N)
+  Searching O(N) (when sorted)
   Insertion:
   - End of the array O(1)
   - Beginning of array O(n), re-indexing required
   Removal:
   - Beginning of array O(n), re-indexing required
+  - End of the array O(1)
+
+  ** Problem Solving **
+  - Restate the problem
+  - Start with Simples Examples
+  - Progress to more complex examples
+  - Explore examples with empty inputs
+  - Explore examples with invalid inputs
+
+  - Restate the problem
+  - What the expected input? Integers? Strings? Double? Float? Number of inputs?
+  - Expected output?
+  - What if the output cannot be determined from the input? (one input is null)
+  - How should I label the important pieces of data?
+
+
+  charCount("aaaa") // { a:4, b:0, c:0 }
+  charCount("hello again 123") // { h:1 }
+  Should we account for spaces?
+  Should we account for symbols?
+  Casing?
+  Empty string? Return null? Undefined, false
+
+Breaking down the problem:
+ function charCount("my PIN number is 1234") {
+  // downcase string
+  // iterate over string and increment object values
+  result.hasOwnProperty('b') ? result.b +=1 : result.b = 1
+ }
+
+** Simplify
+- Temporarily ignore the difficulty and solve the simple problem
+- Come back to the difficult problem
+
+** Final Problem Solution **
+- Solve and Simplify
+- Break it down
+
+Refactor
+- Can you check the result?
+- Can you derive the result differently
+- Can you understand it at a glance
+- Can you use the result or method for some other problem?
+- Can you improve the performance of your solution?
+- Can you think of other ways to refactor? Spacing etc
+- How have other people solved this problem?
+
+** Frequency Counters **
+Iterating and counting with a big o(n) vs o(n^2)
